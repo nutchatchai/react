@@ -7,15 +7,17 @@ import AssetExample from './components/AssetExample';
 
 // or any pure javascript modules available in npm
 
-import  Login  from "./stack/Login";
-import  Main  from "./stack/Main";
-
+import  Page1  from "./stack/Page1";
+import  Page2  from "./stack/Page2";
+import  Page3  from "./stack/Page3";
 import { createStackNavigator, createAppContainer} from "react-navigation";
 
 const AppNavigator = createStackNavigator(
   {
-    Login: Login,
-    Main: Main
+    Page1: Page1,
+    Page2: Page2,
+    Page3: Page3
+   
   }
 )
 const App = createAppContainer(AppNavigator);
